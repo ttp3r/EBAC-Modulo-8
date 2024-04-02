@@ -8,17 +8,9 @@
             Contexto:
             Dado que o usuário tenha selecionado o produto e logado na plataforma
 
-            Cenário: Obrigatóriedade atendida
+            Esquema do Cenário: Obrigatóriedade atendida
             Quando o usuário digitar corretamente os campos <nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <cep>, <telefone>, <email>
-            Então o sistema deve capturar o pagamento e exibir a <mensagem de sucesso> "Parabéns, compra efetuada com sucesso!"
-
-            Cenário: E-mail com formato inválido
-            Quando o usuário digitar incorretamente o campo <email>
-            Então o sistema deve exibir a <mensagem de erro> "Não foi possível finalizar seu pedido. E-mail incorreto."
-
-            Cenário: Obrigatóriedade não atendida
-            Quando o usuário deixar em branco os campos <nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <cep>, <telefone>, <email>
-            Então o sistema deve exibir a <mensagem de formulario incompleto> "Não foi possível finalizar seu pedido. Preencha os campos obrigatórios."
+            Então o sistema deve capturar o pagamento e exibir a mensagem "Parabéns, compra efetuada com sucesso!"  
 
             Exemplos:
             | nome       | sobrenome    | pais     | endereco                     | cidade                  | cep        | telefone    | email               |
@@ -30,3 +22,11 @@
             | "Bruna"    | "dos Santos" | "Brasil" | "Rua Fernando Pessoa, 989"   | "Piraquara"             | "89341234" | "944444444" | "bruna@ebac.com"    |
             | "Bianca"   | "Duman"      | "Brasil" | "Rua Canaã, 679"             | "Colombo"               | "81478678" | "922222222" | "bianca@ebac.com"   |
             | "Luana"    | "Erguvan"    | "Brasil" | "Avenida Ribeira, 2354"      | "Campo Largo"           | "89378528" | "911111111" | "luana@ebac.com"    |
+
+            Cenário: E-mail com formato inválido
+            Quando o usuário digitar incorretamente o campo de e-mail
+            Então o sistema deve exibir a mensagem "Não foi possível finalizar seu pedido. E-mail incorreto."  
+
+            Cenário: Obrigatóriedade não atendida
+            Quando o usuário deixar em branco os campos obrigatórios
+            Então o sistema deve exibir a mensagem "Não foi possível finalizar seu pedido. Preencha os campos obrigatórios."
