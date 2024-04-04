@@ -15,16 +15,11 @@
 
             Exemplos:
             | cor        | tamanho | quantidade |
-            | "Azul"     | "PP"    | 1          |
-            | "Laranja"  | "P"     | 2          |
-            | "Vermelho" | "M"     | 3          |
-            |            | "G"     | 4          |
-            |            | "GG"    | 5          |
-            |            |         | 6          |
-            |            |         | 7          |
-            |            |         | 8          |
-            |            |         | 9          |
-            |            |         | 10         |
+            | "Azul"     | "PP"    | 9          |
+            | "Laranja"  | "P"     | 10         |
+            | "Vermelho" | "M"     | 11         |
+            |            | "G"     |            |
+            |            | "GG"    |            |
 
             Cenário: Sem cor e sem tamanho
             Quando usuário clicar no botão Comprar
